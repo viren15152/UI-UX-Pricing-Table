@@ -60,6 +60,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Link to Deployed Application 
 
+https://viren15152.github.io/UI-UX-Pricing-Table/
 
 ## License
 
