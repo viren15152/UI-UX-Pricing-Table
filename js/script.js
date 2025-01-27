@@ -1,4 +1,4 @@
-// Select all the pricing plans and the toggle button
+// Select all the pricing plans, toggle button, and "Choose Plan" buttons
 const pricingPlans = document.querySelectorAll('.pricing-plan');
 const toggleButton = document.getElementById('togglePricing');
 const ctaButtons = document.querySelectorAll('.cta-btn'); // Select all "Choose Plan" buttons
@@ -35,10 +35,10 @@ ctaButtons.forEach(button => {
         const price = button.getAttribute('data-price');
 
         // Redirect to checkout page with plan info in the URL query parameters
-        window.location.href = `checkout.html?plan=${plan}&price=${price}`;
+        window.location.href = `checkout.html?plan=${encodeURIComponent(plan)}&price=${encodeURIComponent(price)}`;
     });
 });
 
-// Add event listener to the toggle button
+// Added event listener to the toggle button
 toggleButton.addEventListener('click', togglePricing);
 

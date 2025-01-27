@@ -36,3 +36,4 @@ completePurchaseButton.addEventListener('click', (event) => {
 
     document.getElementById("checkout-form").reset(); // Reset form after submission
 });
+
