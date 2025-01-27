@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: black;  /* Global black background */
+    background-color: white;  /* Global black background */
     color: #333;
     display: flex;
     justify-content: center;
@@ -181,5 +181,48 @@ button:hover {
         width: 90%;
     }
 }
+
+/* Card Details Section */
+#card-number, #expiry-date, #cvv, #billing-address {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#card-number:focus, #expiry-date:focus, #cvv:focus, #billing-address:focus {
+    outline: none;
+    border-color: #007bff;  /* Blue focus border */
+    background-color: white;
+}
+
+/* Labels */
+label {
+    font-size: 16px;
+    color: #004080;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Button Styling */
+button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
 
 
