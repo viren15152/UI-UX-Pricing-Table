@@ -1,0 +1,114 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;  /* black background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Pricing Table Container */
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 20px;
+}
+
+/* Individual Pricing Plan Card */
+.pricing-plan {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    color: #004080; /* Dark blue for the title */
+}
+
+.pricing-plan .price {
+    font-size: 32px;
+    color: #007bff; /* Bright blue for price */
+    margin: 10px 0;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul li {
+    margin-bottom: 10px;
+}
+
+/* Featured Plan Style */
+.featured {
+    background-color: #e7f3fe;  /* Light blue background for featured */
+    border: 2px solid #007bff;  /* Blue border for featured */
+}
+
+/* CTA Button Styling */
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hover Effect */
+.pricing-plan:hover {
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Toggle Button Styling */
+.toggle-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    background-color: #007bff;  /* Blue toggle button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
